@@ -4,28 +4,26 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   position: relative;
   width: 400px;
   height: 400px;
   background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .amongus {
   position: relative;
   width: 167px;
   height: 225px;
-  background: #ffffff;
-}
-
-.shadow {
-  position: absolute;
-  width: 101px;
-  height: 54px;
-  left: 27px;
-  top: 171px;
-  background: rgba(0, 0, 0, 0.16);
-  border-radius: 50px;
 }
 
 .leg1 {
@@ -67,16 +65,6 @@
   border-radius: 60px 60px 0px 0px;
 }
 
-.leg_holder {
-  position: absolute;
-  width: 29px;
-  height: 20px;
-  left: 63px;
-  top: 138px;
-  background: #ba120f;
-  border-bottom: 6px solid #000000;
-}
-
 .body_color {
   position: absolute;
   width: 93px;
@@ -87,12 +75,22 @@
   border-radius: 40px 60px 60px 20px;
 }
 
+.leg_holder {
+  position: absolute;
+  width: 29px;
+  height: 10px;
+  left: 63px;
+  top: 150px;
+  background: #ba120f;
+  border-bottom: 6px solid #000000;
+}
+
 .face {
   position: absolute;
   width: 100px;
   height: 64px;
-  left: 100.2px;
-  top: 98px;
+  left: 0;
+  top: 35px;
   background: #1e527c;
   border: 6px solid #000000;
   border-radius: 40px 40px 40px 20px;
@@ -139,4 +137,14 @@
   top: 83px;
   background: #ba120f;
   border-radius: 5px 10px 10px 0px;
+}
+
+.shadow {
+  position: absolute;
+  width: 121px;
+  height: 54px;
+  left: 20px;
+  top: 171px;
+  background: rgba(0, 0, 0, 0.16);
+  border-radius: 50px;
 }
